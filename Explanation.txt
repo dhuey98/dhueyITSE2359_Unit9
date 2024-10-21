@@ -1,0 +1,4 @@
+In this banking system, exception handling is utilized to manage opertations. This ensures the program will remain strong and prevent any crashes. The two exceptions, InsufficientFunds and NegativeDeposit, are created from inheriting from the std::exception. The exceptions handle specific scenarios:
+1. InsufficientFunds is used when a withdrawl request exceeds an accounts balance
+2. NegativeDeposit is used when an attempt is made to deposit a negative amount.
+in the main() function, the exceptions are caught by using try-catch blocks. The program does exception handling invoking the withdraw function through the processWithdrawl(). A generic catch also is present to handle unexpected errors gracefully, ensuring that the program will handle unexpected errors with ease, ensures that the program does not terminate unexpectedly. 
